@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>initial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+    #miniParallax {
+          background: url(cr1.jpg) 25% 0 fixed;
+          height: auto;
+          margin: 0 auto;
+          width: 100%;
+          position: relative;
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+          padding: 60px 0;
+      }
+
+      /* primer elemento con el efecto parallax, con un fondo */
+      #intro {
+          background: url(cr2.jpg) 50% 0 fixed;
+          background-size: cover;
+          height: auto;
+          margin: 0 auto;
+          width: 100%;
+          position: relative;
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+          padding: 100px 0;
+      }
+
+      /* segundo elemento con el efecto, con otra imagen */
+      #cuerpo {
+          background: url(cr6.jpg) 50% 0 fixed;
+          margin: 0 auto;
+          width: 100%;
+          position: relative;
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+          padding: 50px 0;
+      }
+      .navbar-nav > li > a{
+          padding-bottom: 25px;
+      }
+      .navbar-fixed-top{
+          border-width: 0px 0px 0px;
+      }
+      .sanHerme{
+        float: right;;
+        width: 300px;
+      }
+        .minavbar li{
+  padding-left: 250px;
+  margin-left: 100px;
+}
+        .cr7{
+            margin-top: 50px;
+        }
+        .bale{
+            margin-top: 50px;
+        }
+         }
+        .karim{
+            margin-top: 50px;
+        }
+        .captexto {
+            color: aqua;
+        }
+        .ajustes{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Marca y titulo se agrupan para que se 'vea' mejor en dispositivos moviles -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+          <!--el sr-only para lectores de páginas -->
+          <span class="sr-only">Toggle navigation</span>
+          <!-- las rallitas del menu -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <!--se pone solamente o la marca o la imagen (mejor imagen)-->
+          El Bicho
+          <span class="glyphicon glyphicon-text-color"></span>
+          <i class="fa fa-futbol-o"></i>
+          <div class="sanHerme">
+            <div class="input-group">
+               <input type="text" class="form-control" placeholder="Search for...">
+               <span class="input-group-btn">
+                   <button class="btn btn-default" type="button">Go!</button>
+               </span>
+            </div>
+          </div>
+        </a>
+
+
+      </div>
+
+      <!-- Aqui ponemos todos los links, forms y elementos expandibles -->
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.cristianoronaldo.com/">CR7 Official WebPage</a>
+         </li>
+
+          <li><a href="http://www.cr7underwear.com/">CR7 Official UnderWear WebPage</a>
+         </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="http://www.cr7underwear.com/cr7-shirts/">Shirts</a>
+              </li>
+              <li><a href="http://www.cr7underwear.com/cr7-fashion-boxers/">Underwear</a>
+              </li>
+              <li><a href="http://www.cr7underwear.com/cr7-fashion-socks/">Socks</a>
+              </li>
+
+              <li class="divider"></li>
+              <li><a href="https://www.cristianoronaldofragrances.com/">Fragances Legacy</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="btn btn-md" data-toggle="modal" data-target="#myModal">
+             Contacto
+          </a>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+        <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <img src="cr1.jpg"  alt="uno">
+                    <div class="carousel-caption captexto">
+                     <h2>Cristiano Ronaldo...</h2>
+                 </div>
+                </div>
+                <div class="item ">
+                    <img src="bale1.jpg"  alt="dos">
+                    <div class="carousel-caption captexto">
+                     <h2>Gareth Bale...</h2>
+                 </div>
+                </div>
+                <div class="item ">
+                    <img src="benzema1.jpg"  alt="tres">
+                    <div class="carousel-caption captexto">
+                     <h2>Karim Benzema...</h2>
+                 </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+    </div>
+        </div>
+    <section style="padding-top:50px; padding-bottom:50px">
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">Can you see him??</div>
+                <div class="panel-body">
+                    <div class="col-xs-4 col-xs-offset-4" >
+                        <div  data-speed="10" data-type="background" id="miniParallax" >
+                            <div style="background: rgba(87, 153, 219, 0.79); width: 40%; margin: 0 auto;" class="text-center">
+                                <p class="lead">
+                                  El <br/>
+                                  Bicho!!<br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <nav class="navbar navbar-default minavbar">
+
+    <!-- Marca y titulo se agrupan para que se 'vea' mejor en dispositivos moviles -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+        <!--el sr-only para lectores de páginas -->
+        <span class="sr-only">Toggle navigation</span>
+        <!-- las rallitas del menu -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <!-- Aqui ponemos todos los links, forms y elementos expandibles -->
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+
+
+      <ul class="nav navbar-nav ">
+        <li class="page-scroll"><a href="#cr7">Cristiano Ronaldo</a>
+       </li>
+
+        <li class="page-scroll"><a href="#gareth">Gareth Bale</a>
+       </li>
+
+       <li class="page-scroll"><a href="#karim">Karim Benzema</a>
+      </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  <!-- /.container-fluid -->
+</nav>
+
+    <section data-speed="8" data-type="background" id="cuerpo">
+      
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">The BBC</div>
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Second Last Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Cristiano Ronaldo</td>
+                                <td>Dos Santos</td>
+                                <td>Aveiro</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Karim</td>
+                                <td>Mostafa</td>
+                                <td>Benzema</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11</th>
+                                <td>Gareth</td>
+                                <td>Frank</td>
+                                <td>Bale</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <div class="modal fade" id="myModal">
+           <!-- un poco de estilos, si no ocuparía toda la pantalla en este caso-->
+           <div class="modal-dialog">
+              <!-- el contenido-->
+               <div class="modal-content">
+                  <!-- cabecera del modal (titulo y la x para cerrar, el &times;-->
+                   <div class="modal-header">
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                       </button>
+                       <h4 class="modal-title">My Big Modal</h4>
+                   </div>
+                   <!-- cuerpo del modal-->
+                   <div class="modal-body">
+                      <!-- podemos poner lo que conocemos de bootstrap
+                      si ponemos un container en lugar de un container-fluid no se vera bien,
+                      ocuparía demasiado-->
+                       <div class="container-fluid">
+                          <!-- un form clasico de bootstrap-->
+                           <h2>Contact with CR7</h2>
+                           <form role="form">
+                               <div class="form-group">
+                                   <label for="email">Name:</label>
+                                   <input type="email" class="form-control" id="email" placeholder="Enter email">
+                               </div>
+                               <div class="form-group">
+                                   <label for="pwd">Password:</label>
+                                   <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                               </div>
+                               <div class="form-group">
+                                   <label for="email">E-mail:</label>
+                                   <input type="email" class="form-control" id="email" placeholder="Enter email">
+                               </div>
+                               <div class="checkbox">
+                                   <label>
+                                       <input type="checkbox">Do u feel the Real Madrid colours?
+                                   </label>
+                               </div>
+                               <div class="checkbox">
+                                   <label>
+                                       <input type="checkbox">Are u agree with the Privacy policy and use of the web?
+                                   </label>
+                               </div>
+
+                               <button type="submit" class="btn btn-default">Submit</button>
+                           </form>
+                       </div>
+                       <br>
+                       <!-- y si queremos podemos añadir el contenido que nos apetezca -->
+
+                   </div>
+                   <!-- el pie de página del footer-->
+                   <div class="modal-footer">
+                      <!-- con el data-dismiss="modal" decimos que se cierre-->
+                       <button type="button" class="btn btn-default" data-dismiss="modal">
+                       Close
+                       </button>
+                       <button type="button" class="btn btn-primary">
+                           Save changes
+                       </button>
+                   </div>
+
+
+
+
+               </div>
+               <!-- /.modal-content -->
+           </div>
+           <!-- /.modal-dialog -->
+       </div>
+    
+    <div class="col-md-4 col-lg-4 ajustes">
+    <img class="img-circle" src="cr2.jpg" width="500px" height="400px">
+    </div>
+     <div class="container cr7">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a name="cr7">Cristiano Ronaldo </a>
+        </div>
+      <div class="panel-body">
+      Cristiano Ronaldo dos Santos Aveiro (Funchal, Madeira, Portugal, 5 de febrero de 1985), mejor conocido como Cristiano Ronaldo, es un futbolista portugués. Juega como extremo en el Real Madrid Club de Fútbol de la Primera División de España.
+
+Identificado en los medios de comunicación con el numerónimo CR7, es considerado uno de los mejores futbolistas del mundo, llegando incluso a ser el mejor y más completo para un elevado número de personas y prensa vinculadas al deporte, así como también una de las figuras más mediáticas de la actualidad.Es, con 364 goles, el máximo goleador de la historia del Real Madrid Club de Fútbol —tras haber superado sucesivamente a grandes e históricos jugadores como Amancio Amaro, Emilio Butragueño, Pirri, Paco Gento, Hugo Sánchez, Ferenc Puskás, Santillana, Alfredo Di Stéfano y Raúl González Blanco, consiguiéndolo en apenas siete temporadas en el club.
+
+A lo largo de su carrera profesional, ha conseguido batir diversos récords. Entre ellos se destacan ser el único jugador en ganar cuatro Botas de Oro, ser el máximo goleador histórico de la selección de fútbol de Portugal (56) o el máximo goleador histórico de la Champions League (94), competición en la que también posee los récords de más goles en una edición del torneo 17 goles en 11 partidos (2013/14)— y de más goles en una fase de grupos del torneo 11 goles en 6 partidos (2015/16)—. Es además el madridista que menos partidos necesitó (92) para alcanzar los cien goles en el campeonato nacional de Liga,18 el primer futbolista en la historia de la competición que consigue marcarle a todos los equipos a los que se enfrentó en una temporada,19 el único futbolista capaz de marcar en seis Clásicos consecutivos, o el único en anotar en seis visitas consecutivas al Camp Nou, estadio de máxima rivalidad para los blancos.
+      </div>
+    </div>
+  </div>
+     
+     <div class="col-md-4 col-lg-4">
+    <img class="img-circle" src="bale.jpg" width="500px" height="400px">
+    </div>
+       <div class="container bale">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a name="gareth">Gareth Bale </a>
+        </div>
+      <div class="panel-body">
+      Gareth Frank Bale (Cardiff, Gales, Reino Unido, 16 de julio de 1989) es un futbolista galés que juega como extremo derecho o mediapunta en el Real Madrid de la Primera División de España. También es internacional absoluto con la selección de Gales.
+
+Internacional absoluto con la selección galesa desde 2006, Bale debutó con 16 años y 315 días en un partido contra Trinidad y Tobago, ostentando, a partir de entonces y por varios años, el récord de ser el debutante más joven en la historia del combinado británico. En la actualidad es el segundo tras haber sido superado en 2013 por Harry Wilson.
+
+Es considerado como uno de los más grandes talentos emergentes de la Premier League en su momento y del mundo en la actualidad, ha sido reconocido con numerosas distinciones, tales como el Premio Carwyn James de la BBC galesa o el premio al Mejor Jugador de la Premier League siendo el cuarto galés en conseguirlo el cual ganó en dos oportunidades, uniéndose así a la selecta lista de bicampeones formada por Mark Hughes, Alan Shearer, Thierry Henry y Cristiano Ronaldo.También tiene en su haber otras distinciones como el premio al Mejor Jugador Joven de la Premier League y el haber sido elegido en tres oportunidades como Jugador galés del Año, entre muchas otras. En 2011 integró el Equipo ideal de la UEFA, y en 2013 la FIFA le incluyó en la lista de los 23 candidatos al Balón de Oro. Ese mismo año, además, la FIFA publicó un listado con los diez futbolistas más rápidos del mundo, ocupando Bale la segunda posición al alcanzar una velocidad de hasta 34,7 km/h.
+      </div>
+    </div>
+  </div>
+
+<div class="col-md-4 col-lg-4">
+    <img class="img-circle" src="benzema.jpg" width="500px" height="400px">
+    </div>
+     <div class="container karim">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a name="karim">Karim Benzema </a>
+        </div>
+      <div class="panel-body">
+      Karim Mostafa Benzema (Lyon, Ródano-Alpes, Francia, 19 de diciembre de 1987) es un futbolista francés de origen argelino que juega como delantero y su equipo actual es el Real Madrid de la Primera División de España.
+          
+Benzema comenzó su carrera deportiva en las categorías inferiores del Olympique de Lyon y debutó con el primer equipo en 2004. En sus cinco temporadas en el club francés disputó 112 partidos de liga y anotó 43 goles. En la temporada 2007-08, Benzema se convirtió en el máximo goleador de la Ligue 1 con 20 goles, lo que le valió para conseguir, también, el premio al Jugador del Año de la liga francesa. Tras finalizar esa temporada, el futbolista franco disputó la Eurocopa 2008 con Francia.
+
+El 1 de julio de 2009 se hizo oficial el fichaje del futbolista por el Real Madrid, que pagó al Olympique de Lyon 35 millones de euros, más la posibilidad de abonar al club de origen hasta seis millones adicionales por incentivos. El 9 de julio pasó el reconocimiento médico en Madrid y firmó un contrato por seis años. Recién nombrado mejor jugador francés del 2011, Benzema ha recibido múltiples reconocimientos por su enorme calidad futbolística, siendo elegido como el mejor futbolista francés en 2011 y 2012. Nominado en cuatro ocasiones al Balón de Oro, ha estado entre los 22 finalistas en las tres últimas ediciones y ostenta uno de los mejores promedios goleadores de la UEFA Champions League, siendo uno de los cuatro únicos futbolistas, junto a Lionel Messi, Filippo Inzaghi y Ruud Van Nistelrooy, que ha marcado 30 goles en menos de 51 partidos en dicha competición.
+      </div>
+    </div>
+  </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/view_source.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/boots-scrolling.js"></script>
+    <script>
+        $(function(){
+            var poling = true;
+
+            $("#changeStyle").on("click", function(){
+                var t = ["css/bootstrap.min.css", "css/bootstrap2.min.css"];
+                poling ? $("#linkToChange").attr("href", t[0]): $("#linkToChange").attr("href", t[1]);
+                poling = !poling;
+            });
+            $("#changeStyle2").on("click", function(){
+                            $("#navi").toggleClass("navbar-inverse");
+            });
+
+        });
+    </script>
+
+    <script>
+       /*
+       *   CÓDIGO NECESARIO QUE HACE EL EFECTO
+       *   PARALLAX
+       */
+       $(document).ready(function () {
+           // cache the window object
+           $window = $(window);
+
+           $('section[data-type="background"]').each(function () {
+               // declare the variable to affect the defined data-type
+               var $scroll = $(this);
+               $scroll.css("min-height", $(window).height());
+
+               $(window).scroll(function () {
+                   // HTML5 proves useful for helping with creating JS functions!
+                   // also, negative value because we're scrolling upwards
+                   var yPos = -($window.scrollTop() / $scroll.data('speed'));
+
+                   // background position
+                   var coords = '50% ' + yPos + 'px';
+
+                   // move the background
+                   $scroll.css({
+                       backgroundPosition: coords
+                   });
+               }); // end window scroll
+           }); // end section function
+       }); // close out script
+
+       /* Create HTML5 element for IE */
+       document.createElement("section");
+   </script>
+</body>
+
+</html>

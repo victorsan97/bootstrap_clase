@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>initial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+body{
+  background-color: white;
+}
+.container-fluid p {
+position: absolute;
+left: 250px;
+  font-size: 48px;
+  color: yellow;
+}
+
+.nav li{
+  padding-left: 100px;
+  margin-left: 80px;
+}
+.container img{
+  margin: 25px;
+}
+.container-fluid{
+  background-color: #E3DEDE;
+}
+.container-fluid h1{
+  color: black;
+  text-align: center;
+}
+.container-fluid h4{
+  color: black;
+  text-align: center;
+}
+.container-fluid span {
+  float: left;
+}
+.jumbotron {
+text-align: center;
+}
+.footer{
+  background-color: gray;
+}
+.footer p{
+  font-size: 34px;
+  color: white;
+}
+.para {
+  background-image: url(mar.jpg);
+}
+.btn{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.uno{
+  margin-top: 50px;
+}
+.dos {
+  margin-bottom: 50px;
+}
+
+#myCarousel{
+  width: 100%;
+}
+
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+<p>Tu Escritorio, Tu casa, tus Dibujos.</p>
+<img src="cr1.jpg" width="100%" height="400px"/>
+
+<nav class="navbar navbar-default">
+
+    <!-- Marca y titulo se agrupan para que se 'vea' mejor en dispositivos moviles -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+        <!--el sr-only para lectores de páginas -->
+        <span class="sr-only">Toggle navigation</span>
+        <!-- las rallitas del menu -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <!-- Aqui ponemos todos los links, forms y elementos expandibles -->
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+
+
+      <ul class="nav navbar-nav ">
+        <li><a href="#">Nemo</a>
+       </li>
+
+        <li><a href="#">Futurama</a>
+       </li>
+
+       <li class="page-scroll"><a href="#loxodonta">Loxondonta</a>
+      </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">The Simpsons<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Ventana</a>
+            </li>
+          </ul>
+
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  <!-- /.container-fluid -->
+</nav>
+
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-lg-4">
+      <img src="nemo.jpg" width="300px" height="300px"/>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <img src="nemo.jpg"width="300px" height="300px"/>
+    </div>
+    <div class=" col-md-offset-3 col-md-6 col-lg-offset-0 col-lg-4">
+      <img src="nemo.jpg" width="300px" height="300px"/>
+    </div>
+
+    <div class="col-md-4 col-lg-4">
+      <img "img-thumbnail" src="nemo.jpg" width="300px" height="300px"/>
+    </div>
+    <div class="col-md-4 col-lg-4">
+      <img "img-rounded" src="nemo.jpg"width="300px" height="300px"/>
+    </div>
+    <div class="col-md-4 col-lg-4">
+      <img class="img-circle" src="nemo.jpg" width="300px" height="300px"/>
+    </div>
+  </div>
+
+  <div class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+    <div id="myCarousel" class="carousel slide col-md-4" data-ride="carousel" >
+         <!-- Indicators -->
+         <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1"></li>
+             <li data-target="#myCarousel" data-slide-to="2"></li>
+         </ol>
+
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner" role="listbox">
+
+             <div class="item active">
+                 <img class="img-circle" src="nemo.jpg" width="300px" height="300px" alt="cr1">
+                 <div class="carousel-caption">
+                     <h2>Dori</h2>
+
+                 </div>
+             </div>
+             <div class="item ">
+                 <img class="img-circle" src="nemo.jpg" width="300px" height="300px" alt="cr2">
+                 <div class="carousel-caption">
+                     <h2>Nemo</h2>
+                 </div>
+             </div>
+             <div class="item ">
+                 <img class="img-circle" src="nemo.jpg" width="300px" height="300px" alt=cr3>
+                 <div class="carousel-caption">
+                     <h2>Summer...</h2>
+                 </div>
+             </div>
+         </div>
+
+         <!-- Left and right controls -->
+         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+         </a>
+         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+         </a>
+     </div>
+   </div>
+ </div>
+<div class="container">
+ <div class="jumbotron">
+      <h1 class="page-header" id="loxodonta">LOXODONTA</h1>
+ <h4>Tu nuevo Theme + Framework para poder diseñar y desarrollar tus páginas Web.</h4>
+ <span class="label label-warning">Compralo por 10$</span>
+ <span class="label label-primary">Vendelo</span>
+ <span class="label label-success">Da igual...</span>
+  </div>
+</div>
+  <div class="para">
+  <div class="container"data-speed="8" data-type="background">
+      <div class="panel panel-default uno">
+        <div class="panel-body">
+          <h4>Si algo hemos aprendido de los picapiedra, es que los pelicanos sirven para mezclar cemento.</h4>
+          <p>Homer J. Simpson, XX Century Frases célebres de H.J.S
+        </div>
+      </div>
+    </div>
+   <div class="modal fade" id="myModal">
+       <!-- un poco de estilos, si no ocuparía toda la pantalla en este caso-->
+       <div class="modal-dialog">
+          <!-- el contenido-->
+           <div class="modal-content">
+              <!-- cabecera del modal (titulo y la x para cerrar, el &times;-->
+               <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                   </button>
+                   <h4 class="modal-title">Maggie Rules</h4>
+               </div>
+               <!-- cuerpo del modal-->
+               <div class="modal-body">
+                  <!-- podemos poner lo que conocemos de bootstrap
+                  si ponemos un container en lugar de un container-fluid no se vera bien,
+                  ocuparía demasiado-->
+                   <div class="container-fluid">
+                      <!-- un form clasico de bootstrap-->
+                       <h2>Maggie</h2>
+                       <img src="cr2.jpg"width="550px" height="400px" />
+
+                   </div>
+                   <br>
+                   <!-- y si queremos podemos añadir el contenido que nos apetezca -->
+
+               </div>
+               <!-- el pie de página del footer-->
+               <div class="modal-footer">
+                  <!-- con el data-dismiss="modal" decimos que se cierre-->
+                   <button type="button" class="btn btn-default" data-dismiss="modal">
+                   Close
+                   </button>
+                   <button type="button" class="btn btn-primary">
+                       Save changes
+                   </button>
+               </div>
+
+
+
+
+           </div>
+           <!-- /.modal-content -->
+       </div>
+       <!-- /.modal-dialog -->
+   </div>
+
+   <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal"data-speed="8" data-type="background" >Maggie</button>
+   <div class="container"data-speed="8" data-type="background">
+       <div class="panel panel-default dos">
+         <div class="panel-body">
+           <h5>Lisa Marie Simpson 3 4 es un personaje de la serie de televisión de dibujos animados Los Simpson.
+             Es la hija mediana de Homer y Marge Simpson, y hermana de Bart y Maggie.
+             Goza de notable protagonismo y complejidad en la serie.
+            Lisa fue concebida por el caricaturista Matt Groening y debutó en la televisión el 19 de abril de 1987,
+            en el cortometraje de dibujos animados titulado Good Night del programa de variedades El show de Tracey Ullman.</h5>
+         </div>
+         <div class="panel-footer">Lisa, Wikipedia Info.</div>
+    </div>
+       </div>
+     </div>
+     <footer class="footer">
+             <div class="container">
+                 <p class="text-muted text-center">END OF THE WORLD!!</p>
+             </div>
+         </footer>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="js/boots-scrolling.js"></script>
+  <!-- FIN SMOOTH SCROLL -->
+
+  <!-- INICIO DE LA ANIMACION DEL MENU -->
+  <script src="js/boots-animate-menu.js"></script>
+    <script src="js/view_source.min.js"></script>
+</body>
+
+</html>
